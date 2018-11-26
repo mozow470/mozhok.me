@@ -51,7 +51,6 @@
     }
   }
 
-
   .nav-content-gradient {
     z-index: 99;
     position: absolute;
@@ -68,7 +67,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    opacity: 0.7;
+    opacity: 0.78;
 
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
