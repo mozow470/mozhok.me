@@ -1,7 +1,9 @@
 <template>
   <div class="nav-content">
     <div class="nav-content-background" :style="{ backgroundImage: `url(${backgroundUrl})` }"></div>
-    <div class="nav-content-gradient" :style="{ background: `linear-gradient(130deg, rgba(251, 251, 251, 0.3), ${gradientColor})` }"></div>
+    <div class="nav-content-gradient"
+         :style="{ background: `linear-gradient(130deg, rgba(251, 251, 251, 0.3), ${gradientColor})` }"></div>
+    <div class="nav-content-wave" :style="{ background: `${gradientColor}` }"></div>
     <h2 class="nav-content-title">{{title}}</h2>
   </div>
 </template>
@@ -22,7 +24,7 @@
         required: true,
       }
     },
-    name: "NavContent"
+    name: "NavContent",
   }
 </script>
 
@@ -30,6 +32,10 @@
   .nav-content {
     position: relative;
     text-align: center;
+  }
+
+  .nav-content:hover .nav-content-wave{
+    width: 100%;
   }
 
   .nav-content-background {
@@ -42,8 +48,9 @@
 
     @include tab {
       height: 180px;
-    };
+    }
   }
+
 
   .nav-content-gradient {
     z-index: 99;
@@ -54,18 +61,38 @@
     height: 100%;
   }
 
-  .nav-content-title {
+  .nav-content-wave {
     z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    opacity: 0.7;
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .nav-content-title {
+    z-index: 101;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 80%;
+    width: 30%;
     height: 3.2rem;
-
     font-family: 'Fredoka One', cursive;
     color: #DADADA;
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
   }
+
 </style>

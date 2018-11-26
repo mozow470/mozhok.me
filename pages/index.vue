@@ -44,7 +44,7 @@
           {
             title: "MUSIC",
             path: "/music",
-            background: require('~/assets/images/profile.png'),
+            background: require('~/assets/images/music.png'),
             color: "#A0C168"
           },
         ]
