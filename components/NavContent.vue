@@ -26,7 +26,7 @@
   }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .nav-content {
     position: relative;
     text-align: center;
@@ -35,10 +35,14 @@
   .nav-content-background {
     z-index: 98;
     width: 100%;
-    height: 200px;
+    height: 225px;
 
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include tab {
+      height: 180px;
+    };
   }
 
   .nav-content-gradient {
@@ -61,7 +65,7 @@
     width: 80%;
     height: 3.2rem;
 
-    font-family: 'Fredoka One';
+    font-family: 'Fredoka One', cursive;
     color: #DADADA;
   }
 </style>

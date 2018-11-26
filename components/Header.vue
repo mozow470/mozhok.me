@@ -3,7 +3,7 @@
       <div class="header-container">
         <div class="logo">
           <nuxt-link to="/">
-            <img class="logo-svg" src="~/assets/header.svg"/>
+            <img class="logo-svg" src="~/assets/images/header.svg"/>
           </nuxt-link>
         </div>
       </div>
