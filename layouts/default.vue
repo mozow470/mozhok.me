@@ -21,6 +21,6 @@
 <style>
   body {
     background: #F1F1F1;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
   }
 </style>

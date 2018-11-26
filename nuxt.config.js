@@ -23,7 +23,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans|Noto+Sans+JP' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans|M+PLUS+Rounded+1c:300,500&amp;subset=japanese' },
     ]
   },
 
