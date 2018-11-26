@@ -7,11 +7,19 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    titleTemplate: '%s - Mozhok.ME',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: 'Rozhok' },
+      { name: 'robots', content: 'noindex,nofollow,noarchive' }, //SEOに引っかからないようにする
+
+      //OGP
+      { name: 'og:site_name', content: 'Mozuhok.me' } ,
+      { name: 'og:title', content: 'Mozuhok.me' } ,
+      { name: 'og:description', content: 'Rozhok' } ,
+      { name: 'og:type', content: 'website' } ,
+      { name: 'og:url', content: 'https://www.mozhok.me/' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
