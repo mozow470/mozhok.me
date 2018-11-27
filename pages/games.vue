@@ -17,11 +17,7 @@
       <li>Minecraft</li>
       <li>Special Force 2</li>
     </ul>
-    <button class="button">Origin</button>
-    <!--<button class="btn-1">Button 1</button>-->
-    <!--<button class="btn-2">Button 2</button>-->
-    <!--<button class="btn-3">Button 3</button>-->
-    <!--<button class="btn-4">Button 4</button>-->
+    <p>Coming soon ...</p>
   </PageContents>
 </template>
 

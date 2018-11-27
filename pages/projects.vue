@@ -1,5 +1,7 @@
 <template>
-  <PageContents page="PROJECTS"/>
+  <PageContents page="PROJECTS">
+    <p>Coming soon ...</p>
+  </PageContents>
 </template>
 
 <script>

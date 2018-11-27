@@ -41,11 +41,13 @@ M3606 373 c-4 -109 -9 -217 -12 -241 l-6 -42 165 0 165 0 -4 78 c-8 124 -6 120 -60
     name: "Header",
     watch: {
       '$route.path': function () {
-        this.loading = true;
         this.$store.commit('resetMenu');
-        setTimeout(() => {
-          this.loading = false;
-        }, 5200)
+        if (!this.loading) {
+          this.loading = true;
+          setTimeout(() => {
+            this.loading = false;
+          }, 5200)
+        }
       }
     },
     data() {

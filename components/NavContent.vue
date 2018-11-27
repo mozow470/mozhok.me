@@ -88,6 +88,7 @@
     height: 3.2rem;
     font-family: 'Fredoka One', cursive;
     color: #DADADA;
+    line-height: 3.2rem;
   }
 
 </style>

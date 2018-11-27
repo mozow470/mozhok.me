@@ -1,6 +1,6 @@
 <template>
     <div class="copyright">
-      <p> &copy; 2018 Mozuhok.me</p>
+      <p> &copy; 2018 Mozu </p>
     </div>
 </template>
 
@@ -13,11 +13,13 @@
 <style scoped lang="scss">
   .copyright {
     text-align: center;
-    padding: 10px 15px;
+    padding: 20px 15px;
+    font-family: "Montserrat", sans-serif;
 
     p {
       margin: 0;
-      font-weight: 100;
+      font-weight: bold;
+      font-size: 14px;
       color: #8c8f96;
     }
   }

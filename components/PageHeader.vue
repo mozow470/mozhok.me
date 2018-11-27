@@ -56,7 +56,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.78;
+    opacity: 0.82;
   }
 
   .page-header-content-title {
@@ -70,5 +70,6 @@
     height: 3.2rem;
     font-family: 'Fredoka One', cursive;
     color: #DADADA;
+    line-height: 3.2rem;
   }
 </style>
