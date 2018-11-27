@@ -1,18 +1,21 @@
 <template>
-  <div>
-
-  </div>
+  <PageContents page="PROJECTS"/>
 </template>
 
 <script>
-    export default {
-      head() {
-        return {
-          title: 'プロジェクト'
-        }
-      },
-        name: "projects"
-    }
+  import PageContents from '~/components/PageContents.vue'
+
+  export default {
+    components: {
+      PageContents
+    },
+    head() {
+      return {
+        title: 'プロジェクト'
+      }
+    },
+    name: "projects"
+  }
 </script>
 
 <style scoped>

@@ -3,7 +3,7 @@
     <div class="nav-content-background" :style="{ backgroundImage: `url(${backgroundUrl})` }"></div>
     <div class="nav-content-gradient"
          :style="{ background: `linear-gradient(130deg, rgba(251, 251, 251, 0.3), ${gradientColor})` }"></div>
-    <div class="nav-content-wave" :style="{ background: `${gradientColor}` }"></div>
+    <div v-if="wave" class="nav-content-wave" :style="{ background: `${gradientColor}` }"></div>
     <h2 class="nav-content-title">{{title}}</h2>
   </div>
 </template>
@@ -22,7 +22,11 @@
       gradientColor: {
         type: String,
         required: true,
-      }
+      },
+      wave: {
+        type: Boolean,
+        default: true,
+      },
     },
     name: "NavContent",
   }
@@ -87,11 +91,6 @@
     height: 3.2rem;
     font-family: 'Fredoka One', cursive;
     color: #DADADA;
-
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
   }
 
 </style>

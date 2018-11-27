@@ -4,7 +4,8 @@
       <NavContent
         :title="content.title"
         :gradientColor="content.color"
-        :backgroundUrl="content.background"/>
+        :backgroundUrl="content.background"
+      />
     </nuxt-link>
   </section>
 </template>

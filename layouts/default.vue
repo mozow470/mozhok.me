@@ -22,5 +22,6 @@
   body {
     background: #F1F1F1;
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 200;
   }
 </style>

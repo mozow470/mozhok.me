@@ -18,7 +18,7 @@
 
     p {
       margin: 0;
-      font-family: 'Fredoka One', cursive;
+      font-weight: 100;
       color: #8c8f96;
     }
   }

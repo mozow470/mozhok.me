@@ -1,141 +1,45 @@
 <template>
-  <div>
+  <PageContents page="GAMES">
+    <p>
+      最近はプレイするよりも他人のプレイを見ることが多いです。eSportsの大会観戦や、プレイ配信など。
+    </p>
+    <p>
+      BattleFieldがメインです。Rainbow six siegeもちょこちょこプレイしています。<br>
+      以下プレイしたことのあるゲーム
+    </p>
+    <ul>
+      <li>BattleField 4</li>
+      <li>BattleField 1</li>
+      <li>BattleField V</li>
+      <li>Tom Clancy's Rainbow Six Siege</li>
+      <li>Fortnite</li>
+      <li>PLAYERUNKNOWN'S BATTLEGROUNDS</li>
+      <li>Minecraft</li>
+      <li>Special Force 2</li>
+    </ul>
+    <button class="button">Origin</button>
     <!--<button class="btn-1">Button 1</button>-->
     <!--<button class="btn-2">Button 2</button>-->
     <!--<button class="btn-3">Button 3</button>-->
     <!--<button class="btn-4">Button 4</button>-->
-    <!--<button class="btn-5">Button 5</button>-->
-  </div>
+  </PageContents>
 </template>
 
 <script>
-    export default {
-      head() {
-        return {
-          title: 'ゲーム'
-        }
-      },
-        name: "games"
-    }
+  import PageContents from '~/components/PageContents.vue'
+
+  export default {
+    components: {
+      PageContents
+    },
+    head() {
+      return {
+        title: 'ゲーム'
+      }
+    },
+    name: "games"
+  }
 </script>
 
 <style scoped>
-  /* GENERAL BUTTON STYLING */
-  button,
-  button::after {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-
-  button {
-    background: none;
-    border: 3px solid #fff;
-    border-radius: 5px;
-    color: #fff;
-    display: block;
-    font-size: 1.6em;
-    font-weight: bold;
-    margin: 1em auto;
-    padding: 2em 6em;
-    position: relative;
-    text-transform: uppercase;
-  }
-
-  button::before,
-  button::after {
-    background: #fff;
-    content: '';
-    position: absolute;
-    z-index: -1;
-  }
-
-  button:hover {
-    color: #2ecc71;
-  }
-
-  /* BUTTON 1 */
-  .btn-1::after {
-    height: 0;
-    left: 0;
-    top: 0;
-    width: 100%;
-  }
-
-  .btn-1:hover:after {
-    height: 100%;
-  }
-
-  /* BUTTON 2 */
-  .btn-2::after {
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 0;
-  }
-
-  .btn-2:hover:after {
-    width: 100%;
-  }
-
-  /* BUTTON 3 */
-  .btn-3::after {
-    height: 0;
-    left: 50%;
-    top: 50%;
-    width: 0;
-  }
-
-  .btn-3:hover:after {
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 100%;
-  }
-
-  /* BUTTON 4 */
-  .btn-4::before {
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 100%;
-  }
-
-  .btn-4::after {
-    background: #2ecc71;
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 100%;
-  }
-
-  .btn-4:hover:after {
-    height: 0;
-    left: 50%;
-    top: 50%;
-    width: 0;
-  }
-
-  /* BUTTON 5 */
-  .btn-5 {
-    overflow: hidden;
-  }
-
-  .btn-5::after {
-    /*background-color: #f00;*/
-    height: 100%;
-    left: -35%;
-    top: 0;
-    transform: skew(50deg);
-    transition-duration: 0.6s;
-    transform-origin: top left;
-    width: 0;
-  }
-
-  .btn-5:hover:after {
-    height: 100%;
-    width: 135%;
-
-  }
 </style>
