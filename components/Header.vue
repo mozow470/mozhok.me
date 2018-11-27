@@ -58,13 +58,23 @@ M3606 373 c-4 -109 -9 -217 -12 -241 l-6 -42 165 0 165 0 -4 78 c-8 124 -6 120 -60
 
 <style scoped lang="scss">
 
+  .header {
+    @include tab {
+      z-index: 103;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
   .navbar {
     width: 100%;
     border: 1px solid $contents-background;
     background: $contents-background;
     padding: 12px 0;
     display: flex;
-    height: $navHeight
+    height: $navHeight;
   }
 
   .logo-svg {

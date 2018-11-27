@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header/>
-    <nuxt/>
+    <nuxt class="contents"/>
     <Footer/>
   </div>
 </template>
@@ -18,6 +18,13 @@
   }
 </script>
 
+<style scoped lang="scss">
+  .contents {
+    @include tab {
+      margin-top: $navHeight;
+    }
+  }
+</style>
 <style lang="scss">
   body {
     background: $body-background;

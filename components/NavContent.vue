@@ -50,6 +50,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+
     @include tab {
       height: 180px;
     }
@@ -72,11 +73,8 @@
     width: 0;
     height: 100%;
     opacity: 0.78;
-
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
+    -webkit-animation: all 0.3s;
   }
 
   .nav-content-title {
