@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="header">
     <div class="navbar">
       <div class="container">
         <nuxt-link to="/">
@@ -39,24 +39,28 @@
       return {
         activeNav: false
       }
-    }
-
+    },
+    watch: {
+      '$route.path': function () {
+        this.activeNav = false;
+      }
+    },
   }
 </script>
 
 <style scoped lang="scss">
+
   .navbar {
     width: 100%;
     border: 1px solid #ffffff;
     background: #ffffff;
     padding: 12px 0;
     display: flex;
-
+    height: $navHeight
   }
 
   .logo-svg {
-    width: 140px;
-    height: auto;
+    height: 20px;
   }
 
   .menu-trigger {
@@ -65,6 +69,7 @@
     height: 21px;
 
     float: right;
+    cursor: pointer;
   }
 
   .menu-trigger,
@@ -120,9 +125,23 @@
     max-height: 0;
     visibility: hidden;
 
+    background: #F1F1F1;
+
     &.active {
-      max-height: 300px;
+      max-height: 100vh;
       visibility: visible;
+    }
+
+    @include sp {
+      position: absolute;
+      top: $navHeight;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: calc(100vh - 60px);
+
+      z-index: 102;
     }
 
     .navbar-dropmenu-content {
