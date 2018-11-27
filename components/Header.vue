@@ -3,18 +3,6 @@
     <div class="navbar">
       <div class="container">
         <nuxt-link to="/">
-          <!--<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4000 640" preserveAspectRatio="xMidYMid meet" class="logo-svg">-->
-          <!--<g id="svg-fill" fill="#000000">-->
-          <!--<path  d="M0 320 l0 -320 2000 0 2000 0 0 320 0 320 -2000 0 -2000 0 0 -320z"></path>-->
-          <!--</g>-->
-          <!--<g  id="layer102" fill="#ffffff">-->
-          <!--<path class="st21" d="M0 320 l0 -320 2000 0 2000 0 0 320 0 320 -2000 0 -2000 0 0 -320z m2770 155 c-33 -33 -60 -66 -60 -72 0 -7 32 -73 71 -148 39 -75 70 -137 68 -139 -2 -2 -33 -8 -69 -15 -36 -7 -72 -14 -80 -17 -12 -3 -24 20 -50 99 -37 112 -45 108 -38 -15 l5 -78 -110 0 -109 0 6 32 c3 17 9 125 13 240 l6 208 89 0 88 0 0 -52 0 -53 31 50 c56 89 50 87 129 51 l69 -31 -59 -60z m-1874 86 c149 -68 182 -337 54 -444 -97 -82 -250 -49 -309 68 -22 41 -26 63 -26 130 1 123 45 207 130 246 51 24 99 24 151 0z m1378 -18 c104 -73 132 -263 58 -382 -86 -139 -305 -108 -358 51 -22 67 -16 187 13 243 26 49 78 99 118 114 48 17 124 5 169 -26z m726 17 c11 -11 20 -29 20 -40 0 -26 -34 -60 -60 -60 -34 0 -70 23 -77 48 -5 20 0 31 21 49 33 28 69 30 96 3z m-2778 -62 l3 -73 55 72 c30 40 58 72 62 73 4 0 28 -31 55 -70 26 -38 51 -70 56 -70 4 0 7 32 7 70 l0 70 53 0 54 0 7 -212 c4 -116 10 -224 13 -240 l6 -28 -84 1 -84 0 -39 81 c-46 92 -46 92 -97 -20 l-29 -62 -88 0 -87 0 7 122 c4 68 11 176 14 241 l6 117 54 0 53 0 3 -72z m1147 50 c24 -66 26 -63 -39 -60 -33 2 -60 1 -60 -2 0 -4 38 -94 84 -201 l85 -195 -196 0 -195 0 6 31 c3 17 6 62 6 100 l0 68 54 -6 54 -6 -43 147 -43 146 139 0 c135 0 140 -1 148 -22z m291 -43 c0 -64 12 -85 25 -44 6 17 13 20 36 15 29 -5 29 -5 29 44 l0 50 79 0 78 0 7 -152 c3 -84 9 -192 12 -240 l7 -88 -102 0 -102 0 6 122 c3 68 8 135 10 151 4 26 3 27 -39 27 -37 0 -44 -3 -41 -17 2 -10 6 -78 9 -150 l6 -133 -111 0 -111 0 5 29 c4 16 9 124 13 240 l7 211 89 0 88 0 0 -65z m1542 -7 l3 -71 54 71 c30 40 58 72 61 72 4 0 29 -32 56 -71 l49 -72 3 39 c1 21 5 54 8 72 5 32 6 32 59 32 l55 0 0 -103 c0 -57 3 -165 7 -240 l6 -137 -79 0 -80 0 -37 75 c-20 41 -41 75 -47 75 -6 0 -27 -34 -47 -75 l-37 -75 -89 0 -89 0 6 30 c3 17 8 106 11 198 3 92 8 186 11 210 l5 42 54 0 54 0 3 -72z m692 45 c4 -16 9 -35 11 -43 4 -12 -6 -14 -55 -12 l-60 4 0 -37 0 -38 50 5 c46 5 50 3 50 -16 0 -12 3 -31 6 -43 6 -22 4 -23 -50 -23 -47 0 -56 -3 -56 -17 0 -36 16 -46 64 -41 54 6 52 10 60 -114 l4 -78 -165 0 -165 0 6 42 c3 24 8 132 12 241 l7 197 137 0 138 0 6 -27z"></path>-->
-          <!--<path class="st21" d="M786 448 c-22 -30 -22 -131 0 -152 24 -24 61 -20 80 9 12 18 15 39 12 75 -8 80 -58 117 -92 68z"></path>-->
-          <!--<path class="st21" d="M2135 450 c-10 -11 -20 -42 -23 -70 -6 -64 15 -100 58 -100 57 0 78 98 35 164 -21 31 -45 33 -70 6z"></path>-->
-          <!--</g>-->
-          <!--</svg>-->
-
-
           <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 4000 640"
                preserveAspectRatio="xMidYMid meet" class="logo-svg" :class="{ loading : loading }">
             <g id="layer101">
@@ -38,7 +26,11 @@ M3606 373 c-4 -109 -9 -217 -12 -241 l-6 -42 165 0 165 0 -4 78 c-8 124 -6 120 -60
     </div>
     <div class="navbar-dropmenu" :class="{ active : $store.state.isMenuActive}">
       <div class="navbar-dropmenu-content">
-        <h3>このサイトは開発途中です。</h3>
+        <ul>
+          <li v-for="(content, index) in $store.state.pages" :key="index">
+            <nuxt-link :to="content.path">{{content.title}}</nuxt-link>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -68,8 +60,8 @@ M3606 373 c-4 -109 -9 -217 -12 -241 l-6 -42 165 0 165 0 -4 78 c-8 124 -6 120 -60
 
   .navbar {
     width: 100%;
-    border: 1px solid #ffffff;
-    background: #ffffff;
+    border: 1px solid $contents-background;
+    background: $contents-background;
     padding: 12px 0;
     display: flex;
     height: $navHeight
@@ -177,7 +169,7 @@ M3606 373 c-4 -109 -9 -217 -12 -241 l-6 -42 165 0 165 0 -4 78 c-8 124 -6 120 -60
     max-height: 0;
     visibility: hidden;
 
-    background: #F1F1F1;
+    background: $body-background;
 
     &.active {
       max-height: 100vh;
@@ -193,11 +185,54 @@ M3606 373 c-4 -109 -9 -217 -12 -241 l-6 -42 165 0 165 0 -4 78 c-8 124 -6 120 -60
       width: 100%;
       height: calc(100vh - 60px);
 
+      border-top: 1px solid $body-background;
+      background: $contents-background;
+
+
       z-index: 102;
     }
 
     .navbar-dropmenu-content {
       padding: 12px 10px;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          padding: 12px 24px;
+          display: inline-block;
+
+          @include tab {
+            display: block;
+          }
+
+          a {
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            color: #333;
+
+            &:after {
+              position: absolute;
+              bottom: -4px;
+              left: 0;
+              content: '';
+              width: 100%;
+              height: 1px;
+              background: #333;
+              transform: scale(0, 1);
+              transform-origin: center top;
+              transition: transform .3s;
+            }
+
+            &:hover::after {
+              transform: scale(1, 1);
+            }
+          }
+        }
+      }
     }
 
   }

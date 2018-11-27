@@ -87,7 +87,6 @@
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 30%;
     height: 3.2rem;
     font-family: 'Fredoka One', cursive;
     color: #DADADA;

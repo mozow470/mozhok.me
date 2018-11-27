@@ -18,9 +18,9 @@
   }
 </script>
 
-<style>
+<style lang="scss">
   body {
-    background: #F1F1F1;
+    background: $body-background;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: 200;
   }

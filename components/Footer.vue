@@ -14,7 +14,6 @@
   .copyright {
     text-align: center;
     padding: 10px 15px;
-    background: white;
 
     p {
       margin: 0;
