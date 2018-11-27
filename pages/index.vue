@@ -1,6 +1,6 @@
 <template>
   <section class="nav-container">
-    <nuxt-link v-for="(content, index) in contants" :key="index" :to="content.path" >
+    <nuxt-link v-for="(content, index) in $store.state.pages" :key="index" :to="content.path" >
       <NavContent
         :title="content.title"
         :gradientColor="content.color"

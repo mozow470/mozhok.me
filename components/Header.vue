@@ -17,14 +17,14 @@
             </g>
           </svg>
         </nuxt-link>
-        <div class="menu-trigger" :class="{ active : activeNav}" @click="activeNav = !activeNav">
+        <div class="menu-trigger" :class="{ active : $store.state.isMenuActive}" @click="$store.commit('toggleMenu')">
           <span></span>
           <span></span>
           <span></span>
         </div>
       </div>
     </div>
-    <div class="navbar-dropmenu" :class="{ active : activeNav}">
+    <div class="navbar-dropmenu" :class="{ active : $store.state.isMenuActive}">
       <div class="navbar-dropmenu-content">
         <h3>このサイトは開発途中です。</h3>
       </div>
@@ -35,14 +35,9 @@
 <script>
   export default {
     name: "Header",
-    data() {
-      return {
-        activeNav: false
-      }
-    },
     watch: {
       '$route.path': function () {
-        this.activeNav = false;
+        this.$store.commit('resetMenu');
       }
     },
   }
