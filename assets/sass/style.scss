@@ -1,12 +1,12 @@
 @import "mixin";
 
 .page-enter-active, .page-leave-active {
-  transition: all 600ms;
+  transition: all 450ms;
 }
 
 .page-enter, .page-leave-active {
-  transform: translateY(200px);
-  opacity: 0;
+  transform: translateY(60px);
+  opacity: 0.15;
 
   @include tab {
     transform: translateX(100vw);
@@ -14,9 +14,6 @@
 }
 
 .page-leave-active {
-  transform: translateY(200px);
-  opacity: 0;
-
   @include tab {
     transform: translateX(-100vw);
   }
@@ -25,9 +22,6 @@
 /* GENERAL BUTTON STYLING */
 .button,
 .button::after {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
