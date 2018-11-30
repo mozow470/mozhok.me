@@ -75,8 +75,16 @@ M3606 373 c-4 -109 -9 -217 -12 -241 l-6 -42 165 0 165 0 -4 78 c-8 124 -6 120 -60
     border: 1px solid $contents-background;
     background: $contents-background;
     padding: 12px 0;
-    display: flex;
     height: $navHeight;
+    align-items: center;
+    display: flex;
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   .logo-svg {
@@ -123,8 +131,6 @@ M3606 373 c-4 -109 -9 -217 -12 -241 l-6 -42 165 0 165 0 -4 78 c-8 124 -6 120 -60
     position: relative;
     width: 20px;
     height: 21px;
-
-    float: right;
     cursor: pointer;
   }
 
