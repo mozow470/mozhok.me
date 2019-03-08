@@ -24,21 +24,19 @@ M3606 373 c-4 -109 -9 -217 -12 -241 l-6 -42 165 0 165 0 -4 78 c-8 124 -6 120 -60
         </div>
       </div>
     </div>
-    <div class="navbar-dropmenu" :class="{ active : $store.state.isMenuActive}">
-      <div class="navbar-dropmenu-content">
-        <ul>
-          <li v-for="(content, index) in $store.state.pages" :key="index">
-            <nuxt-link :to="content.path">{{content.title}}</nuxt-link>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <NavDropdown/>
   </div>
 </template>
 
 <script>
+
+  import NavDropdown from '~/components/NavDropdown.vue'
+
   export default {
     name: "Header",
+    components: {
+      NavDropdown,
+    },
     watch: {
       '$route.path': function () {
         this.$store.commit('resetMenu');
@@ -62,7 +60,7 @@ M3606 373 c-4 -109 -9 -217 -12 -241 l-6 -42 165 0 165 0 -4 78 c-8 124 -6 120 -60
 
   .header {
     @include tab {
-      z-index: 103;
+      z-index: 999;
       position: fixed;
       top: 0;
       left: 0;
@@ -74,7 +72,6 @@ M3606 373 c-4 -109 -9 -217 -12 -241 l-6 -42 165 0 165 0 -4 78 c-8 124 -6 120 -60
     width: 100%;
     border: 1px solid $contents-background;
     background: $contents-background;
-    padding: 12px 0;
     height: $navHeight;
     align-items: center;
     display: flex;
@@ -180,78 +177,5 @@ M3606 373 c-4 -109 -9 -217 -12 -241 l-6 -42 165 0 165 0 -4 78 c-8 124 -6 120 -60
     transform: translateY(-5px) rotate(315deg);
   }
 
-  .navbar-dropmenu {
-    text-align: center;
-    -webkit-transition: max-height 300ms;
-    transition: max-height 300ms;
-    max-height: 0;
-    visibility: hidden;
 
-    background: $body-background;
-
-    &.active {
-      max-height: 100vh;
-      visibility: visible;
-    }
-
-    @include sp {
-      position: absolute;
-      top: $navHeight;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: calc(100vh - 60px);
-
-      border-top: 1px solid $body-background;
-      background: $contents-background;
-
-
-      z-index: 102;
-    }
-
-    .navbar-dropmenu-content {
-      padding: 12px 10px;
-
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-
-        li {
-          padding: 12px 24px;
-          display: inline-block;
-
-          @include tab {
-            display: block;
-          }
-
-          a {
-            position: relative;
-            display: inline-block;
-            text-decoration: none;
-            color: #333;
-
-            &:after {
-              position: absolute;
-              bottom: -4px;
-              left: 0;
-              content: '';
-              width: 100%;
-              height: 1px;
-              background: #333;
-              transform: scale(0, 1);
-              transform-origin: center top;
-              transition: transform .3s;
-            }
-
-            &:hover::after {
-              transform: scale(1, 1);
-            }
-          }
-        }
-      }
-    }
-
-  }
 </style>

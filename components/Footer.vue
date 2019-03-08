@@ -1,6 +1,6 @@
 <template>
     <div class="copyright">
-      <p> &copy; 2018 Mozu </p>
+      <p> &copy; 2019 Mozu </p>
     </div>
 </template>
 
@@ -13,12 +13,12 @@
 <style scoped lang="scss">
   .copyright {
     text-align: center;
-    padding: 20px 15px;
-    font-family: "Montserrat", sans-serif;
+    padding: 10px 15px;
+    font-family: "Strait", sans-serif;
 
     p {
       margin: 0;
-      font-weight: bold;
+      font-weight: 400;
       font-size: 14px;
       color: #8c8f96;
     }

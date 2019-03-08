@@ -5,21 +5,7 @@
       趣味はコーディング、音楽鑑賞、自転車など...<br><br>
 
       コーディングは主にバックエンドでフロントエンドはあまり得意ではないです。 インフラ周りは...駄目みたいです。<br>
-      扱ったことのある言語・フレームワーク・その他
-
     </p>
-    <ul>
-      <li>Kotlin</li>
-      <li>Java</li>
-      <li>Ruby</li>
-      <li>Rails</li>
-      <li>JavaScript</li>
-      <li>Node.js</li>
-      <li>Vue.js</li>
-      <li>Nuxt.js</li>
-      <li>MySQL</li>
-      <li>SQLite3</li>
-    </ul>
     <p>
       IDEはJetBrains s.r.oの
       <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA Ultimate</a>

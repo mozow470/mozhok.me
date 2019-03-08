@@ -36,11 +36,13 @@
   .nav-content {
     position: relative;
     text-align: center;
+    overflow: hidden;
   }
 
   .nav-content:hover .nav-content-wave{
     width: 100%;
   }
+
 
   .nav-content-background {
     z-index: 98;

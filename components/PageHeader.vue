@@ -34,6 +34,7 @@
   .page-header-content {
     position: relative;
     text-align: center;
+    overflow: hidden;
   }
 
   .page-header-content-background {
