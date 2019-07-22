@@ -45,17 +45,20 @@ module.exports = {
   plugins: [
   ],
 
+
   /*
   ** Nuxt.js modules
   */
-  modules: [,
-    // Doc: https://bootstrap-vue.js.org/docs/
-    // 'bootstrap-vue/nuxt',
-    ['nuxt-sass-resources-loader', [
+  modules: [
+    '@nuxtjs/style-resources', //　追記します
+  ],
+
+  styleResources: {
+    sass: [
       '@/assets/sass/variable.scss',
       '@/assets/sass/mixin.scss',
-    ]],
-  ],
+    ]
+  },
 
   /*
   ** Build configuration
@@ -68,4 +71,4 @@ module.exports = {
 
     }
   }
-}
+};

@@ -1,6 +1,6 @@
 <template>
   <PageContents page="PROJECTS">
-    <p>Coming soon ...</p>
+    <p>もう少しでアプリを公開するかも...</p>
   </PageContents>
 </template>
 
