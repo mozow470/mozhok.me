@@ -1,6 +1,6 @@
 <template>
   <PageContents page="PROJECTS">
-    <p>もう少しでアプリを公開するかも...</p>
+    <p>現在公開中のオープンソースプロジェクトはありません。</p>
   </PageContents>
 </template>
 

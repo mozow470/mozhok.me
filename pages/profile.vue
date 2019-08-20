@@ -9,6 +9,8 @@
     <p>
       IDEはJetBrains s.r.oの
       <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA Ultimate</a>
+      と
+      <a href="https://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a>
       を使用しています。
       <br>
       テキストエディタはMicrosoftの
@@ -34,7 +36,3 @@
     name: "profile"
   }
 </script>
-
-<style scoped>
-
-</style>
