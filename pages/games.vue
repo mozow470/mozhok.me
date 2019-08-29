@@ -1,7 +1,7 @@
 <template>
   <PageContents page="GAMES">
     <p>
-      最近は、e-Sportsの大会観戦に熱中しています。
+      最近は、e-Sportsの大会観戦が個人的なトレンドです。
     </p>
     <p>
       プレイしたことのあるゲームの一覧です
@@ -16,7 +16,6 @@
       <li>Minecraft</li>
       <li>Special Force 2</li>
     </ul>
-    <p>Coming soon ...</p>
   </PageContents>
 </template>
 
