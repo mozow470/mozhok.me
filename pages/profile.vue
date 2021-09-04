@@ -18,7 +18,7 @@
       <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
       を使用しています。
     </p>
-    <p>制作作品につきましては、当サイトのプロジェクトまたは<a href="https://github.com/mzhkz">GitHub</a>をご覧ください。ソフトウェア開発のご依頼に関しましては<a href="https://twitter.com/4x_scope" target="_blank">Twitter</a>のダイレクトメッセージにて受け付けております。</p>
+    <p>制作作品につきましては、当サイトのプロジェクトまたは<a href="https://github.com/mzhkz">GitHub</a>をご覧ください。ソフトウェア開発のご依頼に関しましてはTwitterのダイレクトメッセージにて受け付けております。</p>
     <p>よろしくお願いいたします。</p>
   </PageContents>
 </template>
