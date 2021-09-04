@@ -1,22 +1,27 @@
 <template>
   <PageContents page="MUSIC">
     <p>
-      洋楽から邦楽まで幅広いです。勉強や開発中はほぼBGMをかけてしています。好みの傾向は生楽器を使用した音楽(バンドとか)が多いです。<br>
-      ライブやフェスティバルにもよく行きます。おすすめのアーティスト、曲があったら是非教えてください！<br>
+      洋楽から邦楽まで幅広く聴いています！<br>
       よく聞くアーティスト一覧
     </p>
     <ul>
-      <li>米津玄師</li>
-      <li>Base Ball Bear</li>
-      <li>サカナクション</li>
-      <li>チャットモンチー</li>
-      <li>ゲスの極み乙女</li>
+      <li>King Gnu</li>
+      <li>SIRUP</li>
+      <li><a href="https://open.spotify.com/artist/0hCWVMGGQnRVfDgmhwLIxq?si=9bm2_k9DRFq5--9za2wcvQ&dl_branch=1">サカナクション</a></li>
+      <li>
+        <a href="https://open.spotify.com/artist/0O1UtbTe4ca7HabaiMhYZ7?si=Q7oTraASSrGRkYYe7osasw&dl_branch=1">
+          KIRINJI</a>
+      </li>
+      <li>
+        <a href="https://open.spotify.com/artist/0qC4CNzOUtgdmdVzRqCa1d?si=hvM2v6L9SUOuHjDaYZt7ew&dl_branch=1">STUTS</a>
+      </li>
+      <li>
+        <a href="https://open.spotify.com/artist/5b3ZFm6P1lpZIASMDnBDs9?si=1Xle4lPfSYSgdMmrm05nVw&dl_branch=1">Kan Sano</a>
+      </li>
       <li>Indigo la End</li>
       <li>Susumu Hirasawa</li>
-      <li>P-Model</li>
-      <li>相対性理論</li>
-      <li>忘れらんねえよ</li>
-      <li>神聖かまってちゃん</li>
+      <li>millennium parade</li>
+      <li>幾多りら</li>
       <li>Twenty One Pilots</li>
       <li>Imagine Dragons</li>
     </ul>

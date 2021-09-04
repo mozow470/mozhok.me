@@ -7,7 +7,7 @@ const store = () => new Vuex.Store({
       {
         title: "PROFILE",
         path: "/profile",
-        background: require('~/assets/images/profile.jpeg'),
+        background: require('~/assets/images/new-profile.jpeg'),
         color: "#549b97"
       },
       {

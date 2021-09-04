@@ -1,6 +1,6 @@
 <template>
     <div class="copyright">
-      <p> &copy; 2019 Mozu </p>
+      <p> &copy; 2021 Mozu </p>
     </div>
 </template>
 
