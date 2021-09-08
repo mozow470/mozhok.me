@@ -10,7 +10,7 @@
       <li>BattleField 4</li>
       <li>BattleField 1</li>
       <li>BattleField V</li>
-      <li>VARORANT</li>
+      <li>VALORANT</li>
       <li>Tom Clancy's Rainbow Six Siege</li>
       <li>Fortnite</li>
       <li>PLAYERUNKNOWN'S BATTLEGROUNDS</li>
