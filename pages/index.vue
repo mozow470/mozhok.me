@@ -2,7 +2,7 @@
   <div class="container">
     <!-- TOPページのコンテンツ -->
     <p>ここはトップだよ！</p>
-  
+    
   </div>
 </template>
 
