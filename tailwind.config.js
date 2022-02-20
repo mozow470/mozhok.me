@@ -6,4 +6,13 @@ module.exports = {
     './app.vue',
     './plugins/**/*.{js,ts}',
   ],
+  theme:{
+    extend:{
+      fontFamily:{
+        permanent:['Permanent Marker'],
+        caveat:['Caveat'],
+        corben:['Corben']
+      }
+    }
+  }
 };

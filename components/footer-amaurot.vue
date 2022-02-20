@@ -1,3 +1,5 @@
 <template>
-    フッターです
+    <div>
+        フッターです
+    </div>
 </template>
