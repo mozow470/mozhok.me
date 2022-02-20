@@ -15,7 +15,7 @@
           <ul class="hidden lg:flex">
             <li><h3 class="text-4xl pl-4 font-corben">Memex</h3></li>
             <li><h3 class="text-4xl pl-4 font-corben">Story</h3></li>
-            <li><h3 class="text-4xl pl-4 font-corben">Mayor</h3></li>
+            <li><a href="/mayor/top"><h3 class="text-4xl pl-4 font-corben">Mayor</h3></a></li>
             <li><h3 class="text-4xl pl-4 font-corben">Contact</h3></li>
           </ul>
         </li>
@@ -30,7 +30,7 @@
       <ul>
         <li><h3 class="pt-10 text-2xl pl-5 font-corben ">Memex</h3></li>
         <li><h3 class="pt-10 text-2xl pl-5 font-corben">Story</h3></li>
-        <li><h3 class="pt-10 text-2xl pl-5 font-corben">Mayor</h3></li>
+        <li><a href="/mayor/top"><h3 class="pt-10 text-2xl pl-5 font-corben">Mayor</h3></a></li>
         <li><h3 class="pt-10 text-2xl pl-5 font-corben">Contact</h3></li>
       </ul>
     </div>
@@ -44,7 +44,7 @@
 <style>
   .header-end{
     width: 100%;
-    height: 1px;
+    height: 2px;
     background-color: white;
   }
 

@@ -3,7 +3,7 @@
     <Head>
       <Meta name="viewport" content='width=device-width, initial-scale=1'/> 
     </Head>
-      <Body class="bg-black text-white block min-h-screen">
+      <Body class="bg-black text-white block ">
       <div>
         <HeaderAmaurot class="a-header"/>
         <NuxtLayout>
@@ -11,7 +11,6 @@
         </NuxtLayout>
         <FooterAmaurot class=" pl-10 pr-10"/>
       </div>
-
     </Body>
   </Html>
  
