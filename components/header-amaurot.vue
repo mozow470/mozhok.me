@@ -70,17 +70,17 @@
 
 </style>
 
-<script setup lang="ts">
+<script setup >
   let isOpen=ref(false);
-  watchEffect(()=>{
-    if(isOpen.value){
-      document.addEventListener('touchmove', noScroll, { passive: false });
-      document.addEventListener('mousewheel', noScroll, { passive: false });
-    }else{
-     document.removeEventListener('touchmove', noScroll)
-     document.removeEventListener('mousewheel', noScroll)
-    }
-  })
+  // watchEffect(()=>{
+  //   if(isOpen.value){
+  //     document.addEventListener('touchmove', noScroll, { passive: false });
+  //     document.addEventListener('mousewheel', noScroll, { passive: false });
+  //   }else{
+  //    document.removeEventListener('touchmove', noScroll)
+  //    document.removeEventListener('mousewheel', noScroll)
+  //   }
+  // })
 
   function noScroll (event) { event.preventDefault() }
 </script>
