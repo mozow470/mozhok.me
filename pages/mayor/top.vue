@@ -10,12 +10,12 @@
                 慶應義塾大学環境情報学部　<a href="https://www.atakalab.org/" class="underline decoration-yellow-300">安宅和人研究室</a>所属。
                 クラスター株式会社エンタープライズ事業部　ディレクター(インターン)。
             </p>
-            <a href="./blog">
+            <a href="">
                 <div class="pt-5 mt-5 pb-5 mb-5 rounded-md border-white border-t border-l border-r border-b md:w-1/3 mx-auto">
                     <p class="text-center">Mayor's Blog</p>
                 </div>
             </a>
-            <a href="./io">
+            <a href="./diary/top">
                 <div class="pt-5 mt-5 pb-5 mb-5 rounded-md border-white border-t border-l border-r border-b md:w-1/3 mx-auto">
                     <p class="text-center">Mayor's Diary</p>
                 </div>
