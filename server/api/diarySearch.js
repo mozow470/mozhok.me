@@ -36,6 +36,17 @@ export default async (req, res) => {
     
     let blocks=[];
     await GetBlocks(id,nextOption,blocks,0);
+    let num;
+    for(let i=0; i<blocks.length;i++){
+        if(blocks[i].type=='table'){
+            num=i;
+            blocks[i].rows=[];
+        }else if(blocks[i].type=='table_row'){
+            blocks[num].rows[i-num-1]=blocks[i];
+        }
+    }
+
+   
     return blocks;
 
  }

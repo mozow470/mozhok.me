@@ -7,7 +7,7 @@
       <div>
         <HeaderAmaurot class="a-header"/>
         <NuxtLayout>
-          <NuxtPage class=" pl-10 pr-10 mt-24"/>
+          <NuxtPage class=" pl-10 pr-10 mt-24 md:mt-32"/>
         </NuxtLayout>
         <FooterAmaurot class=" pl-10 pr-10"/>
       </div>
