@@ -27,6 +27,9 @@
              <div v-else-if="v.type=='table_row'">
                  <!-- これは↑で実装済み -->
              </div>
+             <div v-else-if="v.type=='child_database'">
+                <Webs :id="v.id"/>
+             </div>
              <div v-else>
                  {{v.type}}
              </div>
@@ -36,29 +39,31 @@
 </template>
 
 <script setup >
-    const prop =defineProps({
-        contens:[]
-    });
+import Webs from './mayor/webs.vue';
+   
+const prop =defineProps({
+    contens:[]
+});
 
-    function pickText(obj){
-        return obj.text[0].plain_text
-    }
+function pickText(obj){
+    return obj.text[0].plain_text
+}
 
-    function changeAge(age,type){
-        if(type!='table_row'){
-            switch(age){
-                case 0: 
-                    return ''
-                case 1:
-                    return 'ml-10'
-                case 2:
-                    return 'ml-20'
-                default:
-                    return 'ml-30'
-            }
-        }else{
-            return ''
+function changeAge(age,type){
+    if(type!='table_row'){
+        switch(age){
+            case 0: 
+                return ''
+            case 1:
+                return 'ml-10'
+            case 2:
+                return 'ml-20'
+            default:
+                return 'ml-30'
         }
-        
+    }else{
+        return ''
     }
+    
+}
 </script>
