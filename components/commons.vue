@@ -27,6 +27,12 @@
              <div v-else-if="v.type=='table_row'">
                  <!-- これは↑で実装済み -->
              </div>
+             <div v-else-if="v.type=='paragraph'">
+                <div v-if="v.paragraph.text==[]">
+                    <p> </p>
+                </div>
+                <p v-else-if="(v.paragraph.text[0])">{{v.paragraph.text[0].plain_text}}</p>
+             </div>
              <div v-else-if="v.type=='child_database'">
                 <Webs :id="v.id"/>
              </div>
