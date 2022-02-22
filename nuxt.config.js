@@ -27,6 +27,7 @@ export default defineNuxtConfig({
       googleAnalytics: {
         id:"G-4SQKPQK7X0"
       }
-    }
+    },
+    target:'static'
     
 })
