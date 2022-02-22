@@ -11,7 +11,8 @@ module.exports = {
       fontFamily:{
         permanent:['Permanent Marker'],
         caveat:['Caveat'],
-        corben:['Corben']
+        corben:['Corben'],
+        teko:['Teko']
       }
     }
   }

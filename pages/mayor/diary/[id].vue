@@ -8,7 +8,7 @@
 <script setup>
 import Commons from '~~/components/commons.vue';
     const route=useRoute();
-    let url=ref('/api/diarySearch/'+route.params.id) ;
+    let url='/api/diarySearch/'+route.params.id ;
     function addSlash(text){
         const a=text[0];
         const b=text[1];

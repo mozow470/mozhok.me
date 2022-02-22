@@ -13,10 +13,10 @@
         </li>
         <li class="flex justify-center items-end">
           <ul class="hidden lg:flex">
-            <li><h3 class="text-4xl pl-4 font-corben">Memex</h3></li>
-            <li><h3 class="text-4xl pl-4 font-corben">Story</h3></li>
+            <li><a href="/memex/top"><h3 class="text-4xl pl-4 font-corben">Memex</h3></a></li>
+            <li><a href="/story/top"><h3 class="text-4xl pl-4 font-corben">Story</h3></a></li>
             <li><a href="/mayor/top"><h3 class="text-4xl pl-4 font-corben">Mayor</h3></a></li>
-            <li><h3 class="text-4xl pl-4 font-corben">Contact</h3></li>
+            <li><a href="/contact/top"><h3 class="text-4xl pl-4 font-corben">Contact</h3></a></li>
           </ul>
         </li>
         <li class="lg:hidden hum">
@@ -28,10 +28,10 @@
     </div>
     <div :class='isOpen?"emerge":"hidden"'>
       <ul>
-        <li><h3 class="pt-10 text-2xl pl-5 font-corben ">Memex</h3></li>
-        <li><h3 class="pt-10 text-2xl pl-5 font-corben">Story</h3></li>
+        <li><a href="/memex/top"><h3 class="pt-10 text-2xl pl-5 font-corben ">Memex</h3></a></li>
+        <li><a href="/story/top"><h3 class="pt-10 text-2xl pl-5 font-corben">Story</h3></a></li>
         <li><a href="/mayor/top"><h3 class="pt-10 text-2xl pl-5 font-corben">Mayor</h3></a></li>
-        <li><h3 class="pt-10 text-2xl pl-5 font-corben">Contact</h3></li>
+        <li><a href="/contact/top"><h3 class="pt-10 text-2xl pl-5 font-corben">Contact</h3></a></li>
       </ul>
     </div>
     

@@ -8,6 +8,14 @@ export default async (req, res) => {
             headers:{
                 "Authorization": 'Bearer ' +"secret_T7wfS6SFsdyGnMBEPeDH19XEywx6UKrrrTf6f8VPx4n" ,
                 'Notion-Version': '2021-08-16',
+            },
+            body:{
+                "filter":{
+                    "property":"Public",
+                    "checkbox":{
+                        "equals":true
+                    }
+                }
             }
     }
     function addSlash(text){

@@ -9,10 +9,20 @@ export default async (req, res) => {
             },
             body:{
                 "filter":{
-                    "property":"Name",
-                    "text":{
-                        "contains":req.url.split('/')[1]
-                    },
+                    and:[
+                        {"property":"Name",
+                            "text":{
+                                "contains":req.url.split('/')[1]
+                            }
+                        },
+                        {
+                            "property":"Public",
+                                "checkbox":{
+                                    "equals":true
+                                }
+                        }
+
+                    ]
                 }
             }
     }
