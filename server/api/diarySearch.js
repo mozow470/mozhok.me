@@ -30,11 +30,35 @@ export default async (req, res) => {
         }
     }
 
-    const page =await $fetch('https://api.notion.com/v1/blocks/'+id+'/children?page_size=100',nextOption);
+
+
+    // const page =await $fetch('https://api.notion.com/v1/blocks/'+id+'/children?page_size=100',nextOption);
     
-    return page;
+    let blocks=[];
+    await GetBlocks(id,nextOption,blocks,0);
+    return blocks;
 
+ }
 
+ async function GetBlocks(id,nextOption,blocks,counts){
+    const bearBlocks=await $fetch('https://api.notion.com/v1/blocks/'+id+'/children?page_size=100',nextOption);
+    let ex=bearBlocks.results;
 
+    for(let i=0; i<ex.length; i++){
+        const has=ex[i].has_children;
+
+        ex[i].age=counts;
+        delete ex[i].created_time;
+        delete ex[i].last_edited_time;
+        delete ex[i].archived;
+        delete ex[i].created_by;
+        delete ex[i].last_edited_by;
+
+        blocks.push(ex[i]);
+
+        if(has){
+            await GetBlocks(ex[i].id,nextOption,blocks,counts+1);
+        }
+    }
 
  }
