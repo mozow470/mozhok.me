@@ -2,9 +2,9 @@ import { defineNuxtConfig } from 'nuxt3'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-    googleAnalytics: {
-      id: "G-4SQKPQK7X0"
-    },
+    // googleAnalytics: {
+    //   id: "G-4SQKPQK7X0"
+    // },
     privateRuntimeConfig: {
       diaryURL:'https://api.notion.com/v1/databases/ad023003677c4d29bd8c75872c154b68/query',
       token:'secret_T7wfS6SFsdyGnMBEPeDH19XEywx6UKrrrTf6f8VPx4n',
@@ -20,9 +20,9 @@ export default defineNuxtConfig({
         },
       },
     },
-    buildModules: [
-      '@nuxtjs/google-analytics'
-    ],
+    // buildModules: [
+    //   '@nuxtjs/google-analytics'
+    // ],
     publicRuntimeConfig: {
       googleAnalytics: {
         id:"G-4SQKPQK7X0"
