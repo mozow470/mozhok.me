@@ -1,0 +1,19 @@
+version: "3"
+services:
+  app-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: yuto-app
+    working_dir: "/opt/working"
+    tty: true
+    container_name: "yuto-app-worker"
+    stdin_open: true
+    ports:
+      - 3000:3000
+      - 8888:8888
+    expose:
+      - "3000"
+      - "8888"
+    volumes:
+      - .:/opt/working
